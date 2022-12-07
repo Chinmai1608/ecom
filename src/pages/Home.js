@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';  
-
-
+import Categories from '../components/Categories';
+import  Navbar from '../components/Navbar';
+import Slider from '../components/Slider';
 
 const Home = () => {
   return (
     <div>
-        Welcome to my page...
+        <Navbar/>
+        <Slider/>
+        <Categories/>
     </div>
   )
 }
