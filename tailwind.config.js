@@ -6,7 +6,9 @@ module.exports = {
   theme: {
     extend: { padding: {
       '10.5': '50px',
-    }},
+    }
+    
+  },
   },
   plugins: [],
 }
