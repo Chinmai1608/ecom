@@ -1,11 +1,13 @@
 import {
   Facebook,
   Instagram,
+  LinkedIn,
   MailOutline,
   Phone,
   Pinterest,
   Room,
-  Twitter
+  Twitter,
+  WhatsApp
 } from "@mui/icons-material";
 import React from "react";
 
@@ -27,6 +29,8 @@ const Footer = () => {
           <Pinterest />
           <Twitter />
           <Instagram />
+          <LinkedIn/>
+          <WhatsApp/>
         </socialContainer>
       </left>
       <center class="flex-1 m-6">

@@ -7,6 +7,7 @@ import { click } from "@testing-library/user-event/dist/click";
 //
 //const Arrow = Styled
 import { useState } from "react";
+import Product from "../pages/Product";
 
 const Slider = () => {
     const [slideIndex, setslideIndex] = useState(0)
@@ -27,7 +28,7 @@ const Slider = () => {
            
 
             <wrapper class="flex transition-transform ease-linear h-full">
-              <slide bg="#62B6B7" class="flex justify-center w-full bg-teal-600">
+              <slide  class="flex justify-center w-full bg-gradient-to-tr from-teal-700  via-teal-100 to-teal-700">
                 <image class="h-full flex-1 flex justify-center">
                   <img
                     class="m-4"
@@ -52,8 +53,8 @@ const Slider = () => {
                     asperiores id doloribus a eos aliquam cupiditate molestiae
                     aut at facilis.
                   </desciption>
-                  <button class=" flex justify-center text-black border-black p-3 font-extrabold hover:text-white bg-teal-700 hover:shadow-md hover:shadow-gray-300 mx-auto my-6 rounded-full">
-                      SHOP NOW
+                  <button class=" flex justify-center text-black  p-3 font-extrabold hover:text-white bg-gradient-to-tr from-teal-200 via-teal-600 to-teal-200 ring-1 ring-teal-800 hover:shadow-md hover:shadow-gray-700 mx-auto my-6 rounded-full">
+                      <a href="./pages/Product"  > SHOP NOW</a>                      
                   </button>
                   
                 </info>
