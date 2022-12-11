@@ -15,9 +15,19 @@ const Footer = () => {
   return (
     <container class="flex">
       <left class=" flex flex-1 flex-col  p-3">
-        <logo class="text-3xl flex justify-center font-bold m-6 mb-0 font-serif">
-          LAMA.
-        </logo>
+        <div class=" flex justify-center m-6">  
+          <div class="bg-clip-border bg-gradient-to-br  from-white via-slate-200 to-white">   
+            <div class="bg-white">  
+              <div class="bg-slate-50 rounded-tl-full rounded-br-full px-8 m-0.5">        
+                <logo class="text-3xl font-bold m-6 mb-0 font-serif">
+                  <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-yellow-500 to-sky-700">
+                    LAMA.
+                  </span>
+                </logo>
+              </div>
+            </div>
+          </div>
+        </div>
         <desc class="m-6 ">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           blanditiis quidem harum in sunt. Nisi id dolore fuga maxime
@@ -25,12 +35,24 @@ const Footer = () => {
           numquam perspiciatis quas.
         </desc>
         <socialContainer class="flex flex-row mx-6 px-12 justify-between ">
-          <Facebook />
-          <Pinterest />
-          <Twitter />
-          <Instagram />
-          <LinkedIn/>
-          <WhatsApp/>
+          <div class="scale-100 hover:scale-125 ease-in duration-100">
+            <Facebook />
+          </div>
+          <div class="scale-100 hover:scale-125 ease-in duration-100">
+            <Pinterest />
+          </div>
+          <div class="scale-100 hover:scale-125 ease-in duration-100">
+            <Twitter />
+          </div>
+          <div class="scale-100 hover:scale-125 ease-in duration-100">
+            <Instagram />
+          </div>
+          <div class="scale-100 hover:scale-125 ease-in duration-100">
+            <LinkedIn />
+          </div>
+          <div class="scale-100 hover:scale-125 ease-in duration-100">
+            <WhatsApp />
+          </div>
         </socialContainer>
       </left>
       <center class="flex-1 m-6">

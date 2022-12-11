@@ -44,12 +44,16 @@ export default function Example() {
 
         </div>
 
-        <div>
-          <p>
-            <p class="font-serif font-extrabold text-5xl  ">LAMA.</p>
-          </p>
+        <div class="bg-clip-border bg-gradient-to-br  from-white via-slate-200 to-white"> 
+          <div class="bg-white">  
+            <div class="bg-slate-50 rounded-tl-full rounded-br-full px-8 m-0.5">
+              <p class="font-serif font-extrabold text-5xl mx-8 ">
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-yellow-500 to-sky-700" >LAMA.</span>
+              </p>
+            </div>
+          </div>
         </div>
-
+        
         <div class=" flex flex-row justify-end">
           <div class="flex flex-col justify-center">
             <p class="px-5 cursor-pointer">REGISTER</p>

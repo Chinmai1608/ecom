@@ -4,11 +4,22 @@ module.exports = {
   './pages/**/*.{js,ts,jsx,tsx,html}',
   './components/**/*.{js,ts,jsx,tsx,html}',],
   theme: {
+   
     extend: { padding: {
       '10.5': '50px',
     }
+
     
   },
   },
+  
   plugins: [],
+  theme:{
+   extend:{   
+    backgroundImage:{
+        'img':"url('https://thumbs.dreamstime.com/b/photo-portrait-big-family-small-kids-carrying-shopping-bags-isolated-vivid-teal-colored-background-205760535.jpg')"
+      }}
+  }
+
+
 }
