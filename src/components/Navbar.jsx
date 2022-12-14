@@ -46,7 +46,7 @@ export default function Example() {
 
         <div class="bg-clip-border bg-gradient-to-br  from-white via-slate-200 to-white"> 
           <div class="bg-white">  
-            <div class="bg-slate-50 rounded-tl-full rounded-br-full px-8 m-0.5">
+            <div class="bg-slate-50  rounded-tl-full rounded-br-full px-8 m-0.5">
               <p class="font-serif font-extrabold text-5xl mx-8 ">
                 <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-yellow-500 to-sky-700" >LAMA.</span>
               </p>
@@ -56,18 +56,18 @@ export default function Example() {
         
         <div class=" flex flex-row justify-end">
           <div class="flex flex-col justify-center">
-            <p class="px-5 cursor-pointer">REGISTER</p>
+            <a href="./Register" class="px-5 cursor-pointer">REGISTER</a>
           </div>
           <div class="flex flex-col justify-center">
-            <p class="px-5 cursor-pointer">SIGN IN</p>
+            <a href="./Login" class="px-5 cursor-pointer">SIGN IN</a>
           </div>
-           <div class="flex flex-col justify-center">
+           <a href="./Cart" class="flex flex-col justify-center">
             <Badge badgeContent={4} Colour="primary">
 
               <ShoppingCartSharp />
 
             </Badge>
-           </div>
+           </a>
         </div>
 
 

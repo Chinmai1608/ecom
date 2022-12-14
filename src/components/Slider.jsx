@@ -1,11 +1,6 @@
-//import { Container } from '@mui/system'
-import { Button, Container } from "@mui/material";
+
 import React from "react";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
-import { click } from "@testing-library/user-event/dist/click";
-//import styled from 'styled-components'
-//
-//const Arrow = Styled
 import { useState } from "react";
 import Product from "../pages/Product";
 
@@ -36,25 +31,16 @@ const Slider = () => {
                     
                   />
                 </image>
-                <info class="flex-1 flex flex-col">
+                <info class="flex-1 flex flex-col justify-center">
                   <p class=" m-12 font-extrabold font-serif text-4xl flex justify-center">
                     SUMMER SALE
                   </p>
 
-                  <desciption class="px-12">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Officia repellendus officiis eveniet obcaecati similique,
-                    sit eos fugit ipsam quos quidem facilis corrupti architecto
-                    totam minima adipisci, sint illo voluptatibus eaque magni
-                    voluptates nihil esse voluptatem. Magni hic fugit, explicabo
-                    asperiores id doloribus a eos aliquam cupiditate molestiae
-                    aut at facilis totam minima adipisci, sint illo voluptatibus eaque magni
-                    voluptates nihil esse voluptatem. Magni hic fugit, explicabo
-                    asperiores id doloribus a eos aliquam cupiditate molestiae
-                    aut at facilis.
+                  <desciption class="px-12 py-6 text-xl">
+                    DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.
                   </desciption>
                   <button class=" flex justify-center text-black  p-3 font-extrabold hover:text-white bg-gradient-to-tr from-teal-200 via-teal-600 to-teal-200 ring-1 ring-teal-800 hover:shadow-md hover:shadow-gray-700 mx-auto my-6 rounded-full">
-                      <a href="./pages/Product"  > SHOP NOW</a>                      
+                      <a href="./Product"  > SHOP NOW</a>                      
                   </button>
                   
                 </info>

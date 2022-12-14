@@ -15,7 +15,7 @@ const CategoryItems = () => {
             beatae earum dolorum?
           </p>
     
-          <button class="rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-md hover:shadow-black active:{shadow-md shadow-black}">
+          <button class=" rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-md hover:shadow-black active:{shadow-md shadow-black}">
             Shop Now
           </button>
         </card1>

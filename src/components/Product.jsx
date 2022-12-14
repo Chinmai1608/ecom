@@ -6,15 +6,17 @@ const Product = () => {
   return (
     <container class="flex flex-row flex-1 px-5  flex-wrap">
         
-        <div class="flex flex-col w-48  m-10">  
-          <div  class="h-80 flex flex-col justify-center">   
-            <img src="https://bit.ly/3uBidZm"/>
+         <div class=" w-48  m-10 hover:  "> 
+          <div class="flex flex-col w-48 -z-10  ">  
+            <div  class="h-80 flex flex-col justify-center z-0 hover:opacity-60  ">   
+              <img src="https://bit.ly/3uBidZm"/>
+            </div>
+            <info class=" hover:flex hidden flex-row justify-center cursor-pointer z-10">
+              <ShoppingCartOutlined/>        
+              <SearchOutlined/>        
+              <FavoriteBorderOutlined/>              
+            </info>
           </div>
-          <info class="flex flex-row justify-center cursor-pointer">
-            <ShoppingCartOutlined/>        
-            <SearchOutlined/>        
-            <FavoriteBorderOutlined/>              
-          </info>
         </div>
 
         <div class="flex flex-col w-48 m-10">

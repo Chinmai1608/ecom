@@ -23,9 +23,9 @@ const Product = () => {
             quidem iste officiis?
           </desc>
           <div class="flex justify-center flex-row"> 
-            <p class=" line-through text-red-700 my-3 text-lg">$ 25</p>
-            <price class=" text-green-800 m-2 text-2xl">$ 20 <sub>Only</sub>  </price>
-            <p class="my-3">80% Off</p>
+            <p class=" line-through text-red-700 my-3 text-lg">$ 50</p>
+            <price class=" text-green-800 m-2 text-2xl">$ 40 <sub>Only</sub>  </price>
+            <p class="my-3">20% Off</p>
           </div>
           <filtercontainer>
             <filter class="grid grid-cols-2 ">

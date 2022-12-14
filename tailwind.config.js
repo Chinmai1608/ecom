@@ -12,6 +12,17 @@ module.exports = {
     
   },
   },
+
+  theme: {
+   
+    extend: { 
+      flex: {
+      '3': '3 3 0%'
+    }
+
+    
+  },
+  },
   
   plugins: [],
   theme:{
