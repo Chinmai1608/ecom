@@ -18,6 +18,9 @@ export default function App() {
   return(
     <Router>
       <Routes>
+      <Route exact path ='/' element={<Home/>} /> 
+      </Routes>
+      <Routes>
       <Route exact path ='/Cart' element={<Cart/>} /> 
       </Routes>
       <Routes>

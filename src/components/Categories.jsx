@@ -3,7 +3,7 @@ import CategoryItems from './CategoryItems'
 
 const Categories = () => {
   return (
-    <container class="flex px-20 justify-between">
+    <container class="flex max-w-full justify-between">
         <CategoryItems/>
     </container>
   )

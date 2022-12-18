@@ -13,7 +13,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <container class="flex">
+    <container class="md:grid-cols-3 grid grid-cols-1">
       <left class=" flex flex-1 flex-col  p-3">
         <div class=" flex justify-center m-6">  
           <div class="bg-clip-border bg-gradient-to-br  from-white via-slate-200 to-white">   
@@ -57,41 +57,46 @@ const Footer = () => {
       </left>
       <center class="flex-1 m-6">
         <h1 class="m-6 text-2xl">Useful Links</h1>
-        <ul class="flex-wrap">
+        <ul class="grid md:grid-cols-1 grid-cols-2 ">
           <li>
             <a href="http://localhost:3000/">Home</a>
           </li>
-          <li>Cart</li>
-          <li>Men's Fashion</li>
-          <li>Women's Fashion</li>
-          <li>Accessories</li>
-          <li>My Account</li>
-          <li>Order Tracking</li>
-          <li>Wishlist</li>
-          <li>Terms</li>
+          <a>Cart</a>
+          <a>Men's Fashion</a>
+          <a>Women's Fashion</a>
+          <a>Accessories</a>
+          <a>My Account</a>
+          <a>Order Tracking</a>
+          <a>Wishlist</a>
+          <a>Terms</a>
+          <a>About Us</a>
         </ul>
       </center>
       <right class="flex-1 m-6">
-        <h1 class="m-6 text-2xl ml-10">Contact</h1>
-        <p class="py-1">
-          <Room /> 622 Dixie Path, South Tobinchester 98336
-        </p>
-        <p class="py-1">
-          <Phone /> +1 234 56 78
-        </p>
-        <p class="py-1">
-          <MailOutline /> contact@lama.dev
-        </p>
+        <h1 class="m-6 text-2xl ml-10 flex justify-center">Contact</h1>
+        <div class="flex flex-row justify-center">
+          <div > 
+            <p class="py-1">
+              <Room /> 622 Dixie Path, South Tobinchester 98336
+            </p>
+            <p class="py-1">
+              <Phone /> +1 234 56 78
+            </p>
+            <p class="py-1">
+              <MailOutline /> contact@lama.dev
+            </p>
+          </div>
+        </div>
         <div class="  grid grid-cols-2 ">
           <div class="flex flex-col m-5">
             <div class="cursor-pointer flex py-2 justify-center">
               Credit Card
             </div>
-            <img src="//js.pngtree.com/web3/images/pay/pay_card.png" />
+            <img class="max-w-fit min-w-0 flex mx-auto" src="//js.pngtree.com/web3/images/pay/pay_card.png" />
           </div>
           <div class="flex flex-col m-5">
             <div class="cursor-pointer flex py-2 justify-center">Pay Pal</div>
-            <img src="//js.pngtree.com/web3/images/p5.png" />
+            <img class="max-w-fit min-w-0 flex mx-auto" src="//js.pngtree.com/web3/images/p5.png" />
           </div>
         </div>
       </right>

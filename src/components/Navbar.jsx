@@ -1,14 +1,16 @@
 import React from "react";
-//import styled from "styled-components";
-//import logo from "/home/chinmai/vs.code/E-Commerce/ecom/src/components/shopping-cart.png"
-//import { FC } from "react";
 import SearchIcon from '@mui/icons-material/Search';
 import { Margin, Search, ShoppingCartSharp } from "@mui/icons-material";
-import { Badge } from "@mui/material";
-//import { bgcolor } from "@mui/system";
-//import SearchContainer from '@mui/icons-material/Search';
+import { Badge, Menu, MenuItem } from "@mui/material";
+import MenuIcon from '@mui/icons-material/Menu';
 
-//interface Props {}
+const btn = document.querySelector('div.mobile-menu-button');
+const menu = document.querySelector('.mobile-menu')
+
+//btn.addEventListener('click', () => {
+//  menu.classList.toggle('hidden');
+//} );
+
 
 export default function Example() {
   return (
@@ -19,12 +21,12 @@ export default function Example() {
         <p class="text-white">Super Deal! Free shipping on Orders over $50</p>
       </div>
 
-      <div class="flex flex-row px-5 py-2  justify-between align-middle ">
+      <div class="flex flex-row px-5 py-2  justify-between align-middle  ">
         <div className="flex flex-row justify-center">
           <div className="flex flex-col justify-center">
-          <p class="px-3 cursor-pointer">EN</p>
+          <p class="px-3 cursor-pointer hidden md:flex">EN</p>
           </div>
-          <div class="px-3 flex flex-col justify-center">
+          <div class="px-3 flex-col justify-center hidden md:flex">
             <div class="flex flex-row">
             <div className="flex flex-col justify-center">
               <SearchIcon /> 
@@ -55,13 +57,13 @@ export default function Example() {
         </div>
         
         <div class=" flex flex-row justify-end">
-          <div class="flex flex-col justify-center">
+          <div class=" flex-col justify-center hidden md:flex">
             <a href="./Register" class="px-5 cursor-pointer">REGISTER</a>
           </div>
-          <div class="flex flex-col justify-center">
+          <div class=" flex-col justify-center hidden md:flex">
             <a href="./Login" class="px-5 cursor-pointer">SIGN IN</a>
           </div>
-           <a href="./Cart" class="flex flex-col justify-center">
+           <a href="./Cart" class=" flex-col justify-center hidden md:flex">
             <Badge badgeContent={4} Colour="primary">
 
               <ShoppingCartSharp />
@@ -69,10 +71,28 @@ export default function Example() {
             </Badge>
            </a>
         </div>
-
+         
+        <div class="mobile-menu-button md:hidden flex flex-col justify-center">
+            <MenuIcon/>
+        </div>
 
       </div>
+
+      <div class="mobile-menu hidden md:hidden">
+        <div class="flex  flex-col bg-slate-50 border p-2">
+          <a href="#" class="px-8 py-0.5 hover:bg-slate-100 text-sm">Features</a>
+          <a href="#" class="px-8 py-0.5 hover:bg-slate-100 text-sm">Products</a>
+          <a href="#" class="px-8 py-0.5 hover:bg-slate-100 text-sm">cart</a>
+          <a href="#" class="px-8 py-0.5 hover:bg-slate-100 text-sm">Sign in</a>
+          <a href="#" class="px-8 py-0.5 hover:bg-slate-100 text-sm">Register</a>
+          <a href="#" class="px-8 py-0.5 hover:bg-slate-100 text-sm">Exit</a>
+        </div> 
+      </div>
+
     </div>
+
+    
+
   );
 };
 
