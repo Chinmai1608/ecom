@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <desc class="m-6 ">
+        <desc class="m-6 text-center">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           blanditiis quidem harum in sunt. Nisi id dolore fuga maxime
           repellendus vel vero perspiciatis obcaecati aspernatur quaerat? Dolore

@@ -8,12 +8,12 @@ const Product = () => {
   return (
     <container>
       <Navbar />
-      <wrapper class="flex p-12">
-        <image class="w-full flex-1">
+      <wrapper class=" p-12 grid grid-cols-1 md:grid-cols-2">
+        <image class="w-full ">
           <img 
           src="https://www.eshakti.com/handler/CustomStyleJoinImageHandler01.ashx?p=CL0091306&n=As%20Shown&s=As%20Shown&pl=As%20Shown&pst=Denim%20Jumpsuit" />
         </image>
-        <info class="flex-1 p-6">
+        <info class="p-6">
           <p class="m-6 flex justify-center text-2xl">Denim Jumpsuit</p>
           <desc>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse ad
