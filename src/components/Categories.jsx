@@ -1,11 +1,11 @@
 import React from 'react'
-import CategoryItems from './CategoryItems'
+import Categoryitems from '../components/CategoryItems';
 
 const Categories = () => {
   return (
-    <container class="flex max-w-full justify-between">
-        <CategoryItems/>
-    </container>
+    <div class="mx-4">
+      <Categoryitems/>
+    </div>
   )
 }
 

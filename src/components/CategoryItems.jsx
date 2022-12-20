@@ -15,9 +15,10 @@ const CategoryItems = () => {
             beatae earum dolorum?
           </p>
     
-          <button class=" rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-md hover:shadow-black active:{shadow-md shadow-black}">
+          <a href="../ProductList" 
+           class=" rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-sm active:shadow-inner active:shadow-black hover:shadow-black">
             Shop Now
-          </button>
+          </a>
         </card1>
     
       <card2 class="flex flex-col justify-between mx-4 my-4 shadow-sm shadow-teal-900 px-6 bg-slate-100 rounded-lg">
@@ -31,9 +32,10 @@ const CategoryItems = () => {
           beatae earum dolorum?
         </p>
 
-        <button class="rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-md hover:shadow-black">
+        <a href="../ProductList" 
+         class="rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-sm active:shadow-inner active:shadow-black hover:shadow-black">
           Shop Now
-        </button>
+        </a>
       </card2>
 
       <card3 class="flex flex-col justify-between mx-4 my-4 shadow-sm shadow-teal-900 px-6 bg-slate-100 rounded-lg">
@@ -47,9 +49,10 @@ const CategoryItems = () => {
           beatae earum dolorum?
         </p>
 
-        <button class="rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-md hover:shadow-black">
+        <a href="../ProductList" 
+          class="rounded-full felx justify-center p-2 bg-slate-300 text-center mx-auto mt-2 mb-4 text-slate-800 hover:shadow-sm active:shadow-inner active:shadow-black hover:shadow-black">
           Shop Now
-        </button>
+        </a>
       </card3>
     </container>
   );

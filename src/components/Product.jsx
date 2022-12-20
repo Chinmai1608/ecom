@@ -4,7 +4,7 @@ import React from 'react'
 
 const Product = () => {
   return (
-    <container class="flex flex-row flex-wrap mx-auto">
+    <container class="flex flex-row flex-wrap justify-center">
         
          <div class=" w-48  m-10 hover:  "> 
           <div class="flex flex-col w-48 -z-10  ">  

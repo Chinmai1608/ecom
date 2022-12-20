@@ -21,7 +21,7 @@ const Newsletter = () => {
               type="email"
             />
             <div className="bg-teal-200 rounded-full ">
-              <Send className=" hover:touch-pinch-zoom  transition-colors cursor-pointer bg-teal-200 border-black m-2" />
+              <Send className="transition-colors cursor-pointer bg-teal-200 border-black m-2" />
             </div>
           </div>
         </div>

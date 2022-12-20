@@ -1,41 +1,38 @@
-import './App.css';
-import React from 'react';
-import Navbar from './components/Navbar';
-import {BrowserRouter as Router,Routes,Route,Link} from 'react-router-dom';
-import Home from './pages/Home';
-//import ProductList from './pages/ProductList';
-import Product from './pages/Product';
-import Slider from './components/Slider';
-import Register from './pages/Register';
-import Login from './pages/Login';
-import Cart from './pages/Cart';
-import Products from './components/Products';
-import Categories from './components/Categories';
+import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import ProductList from "./pages/ProductList";
+import Product from "./pages/Product";
+import Register from "./pages/Register";
+import Login from "./pages/Login";
+import Cart from "./pages/Cart";
+import Home from "./pages/Home";
 
-//import Product from './components/Product';
-//
 export default function App() {
-  return(
+  return (
     <Router>
       <Routes>
-      <Route exact path ='/' element={<Home/>} /> 
+        <Route exact path="/" element={<><Home/> <Navbar/></>} />
       </Routes>
       <Routes>
-      <Route exact path ='/Cart' element={<Cart/>} /> 
+        <Route exact path="/cart" element={<Cart/>} />
       </Routes>
       <Routes>
-      <Route exact path ='/Login' element={<Login/>} /> 
+        <Route exact path="/login" element={<Login />} />
       </Routes>
       <Routes>
-      <Route exact path ='/Register' element={<Register/>} /> 
+        <Route exact path="/register" element={<Register />} />
       </Routes>
       <Routes>
-      <Route exact path ='/Product' element={<Product/>} /> 
+        <Route exact path="/product" element={<Product />} />
       </Routes>
       <Routes>
-      <Route exact path ='/Home' element={<Home/>} /> 
+        <Route exact path="/home" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route exact path="/productList" element={<ProductList />} />
       </Routes>
     </Router>
-  )
+  );
 }
- 

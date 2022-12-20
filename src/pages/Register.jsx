@@ -1,8 +1,18 @@
-import { CheckBox, PanoramaFishEye, Password, RemoveRedEye } from "@mui/icons-material";
+import { Visibility, VisibilityOff } from "@mui/icons-material";
 import React from "react";
+import { useState } from "react";
+import Navbar from '../components/Navbar'
 
 const Register = () => {
+  const [open, setopen] = useState(false)
+
+  const toggle = () => {
+    setopen(!open)
+  }
+
   return (
+   <div>
+    <Navbar/> 
     <container class="w-screen h-screen bg-gradient-to-t ">
       <wrapper class="flex flex-col justify-center w-screen h-screen bg-img bg-local bg-no-repeat bg-cover bg-center">
        <div class="backdrop-blur-sm">
@@ -15,7 +25,7 @@ const Register = () => {
         </p>
         <div>
           <form class="flex flex-col justify-between">
-            <div class="flex flex-row justify-center">
+            <div class="grid grid-cols-1 md:flex md:flex-row md:justify-center">
               <span class="p-2 flex flex-row justify-center">
                 <input
                   class="p-1.5 rounded-full pl-5 bg-teal-50 ring-1 active:shadow-md active:shadow-black"
@@ -39,31 +49,33 @@ const Register = () => {
               <input
                 class="p-1.5 rounded-full pl-5 bg-teal-50 ring-1 active:shadow-md active:shadow-black"
                 placeholder="Email"
+                type="email"
               />
             </span>
             <span class="p-2 flex flex-row justify-center">
               <input
                 class="p-1.5 rounded-full pl-5 bg-teal-50 ring-1 active:shadow-md active:shadow-black"
-                type="Password"
+                type={(open === false)? 'password':'text'}
                 placeholder="Password"
               />
-              <div class="p-1.5 cursor-pointer">
-                <RemoveRedEye/>
-              </div>
+             
             </span>
-            <span class="p-2 flex flex-row justify-center">
-              <input
-                class="p-1.5 rounded-full pl-5 bg-teal-50 ring-1 active:shadow-md active:shadow-black"
-                type="Password"
-                placeholder="Confirm Password"
-              />
-              <div class="p-1.5 cursor-pointer">
-                <RemoveRedEye/>
-              </div>
+            <span class=" flex flex-row justify-center">
+              <span class="p-2 w-fit relative flex flex-row "> 
+                <input
+                  class="p-1.5 rounded-full pl-5 bg-teal-50 ring-1 active:shadow-md active:shadow-black "
+                  placeholder="Confirm Password"
+                  type={(open === false)? 'password':'text'}                  
+                />              
+                <div class="p-1.5 cursor-pointer absolute right-3 bottom-2">
+                {(open === false)? <Visibility onClick={toggle}/>:
+                  <VisibilityOff onClick={toggle}/>}
+                </div>
+              </span>
             </span>
             <agreement class="flex flex-row justify-center text-xs p-5">
               <div class=" bg-slate-100 ring-2 ring-slate-600 p-3 rounded-md">
-                <CheckBox/>
+                <input type="checkbox" class="mr-1"/>
                     by Creating an account, I Concent to the processing of my
                 personal Data in accordance with the PRIVACY POLICY
               </div>
@@ -78,6 +90,7 @@ const Register = () => {
        </div>
       </wrapper>
     </container>
+   </div>
   );
 };
 

@@ -8,14 +8,15 @@ const ProductList = () => {
   return (
     <div>
       <Navbar />
-      <span class=" text-3xl p-3 bg-teal-50 flex justify-center rounded-full shadow-md underline text-teal-900 m-6 mb-10 ">
+      <hr className=" border-1"/>
+     {/* <span class=" text-3xl p-3 bg-teal-50 flex justify-center rounded-full shadow-md underline text-teal-900 m-6 mb-10 ">
         Dresses
-      </span>
-      <filtercontainer class="flex justify-between">
+  </span>*/}
+      <filtercontainer class="flex justify-between m-5 mb-1">
         <div>
           <filter class="text-2xl m-1">Filter Products:</filter>
-
-          <select class="py-1 px-3 m-1 rounded-full border-black bg-teal-50 ring-1 ring-teal-600">
+          
+          <select class="py-1 px-3 m-2 rounded-full border-black bg-teal-50 ring-1 ring-teal-600">
             <option disabled selected>
               Colour
             </option>
@@ -28,7 +29,7 @@ const ProductList = () => {
             <option>All</option>
           </select>
 
-          <select class="py-1 px-3 m-1 border-black rounded-full bg-teal-50 ring-1 ring-teal-600 ">
+          <select class="py-1 px-3 m-2 border-black rounded-full bg-teal-50 ring-1 ring-teal-600 ">
             <option disabled selected>
               Size
             </option>
@@ -43,7 +44,7 @@ const ProductList = () => {
         <div>
           <filter class="text-2xl m-1 ">Sort Products:</filter>
 
-          <select class="py-1 px-3 m-1 border-black rounded-full bg-teal-50 ring-1 ring-teal-600">
+          <select class="py-1 px-3 m-2 border-black rounded-full bg-teal-50 ring-1 ring-teal-600">
             <option selected>Newest</option>
             <option>Price (asc)</option>
             <option>Price (Desc)</option>

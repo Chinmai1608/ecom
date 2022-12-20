@@ -1,5 +1,6 @@
 import {
   Facebook,
+  GitHub,
   Instagram,
   LinkedIn,
   MailOutline,
@@ -10,6 +11,7 @@ import {
   WhatsApp
 } from "@mui/icons-material";
 import React from "react";
+import Home from "../pages/Home";
 
 const Footer = () => {
   return (
@@ -36,7 +38,7 @@ const Footer = () => {
         </desc>
         <socialContainer class="flex flex-row mx-6 px-12 justify-between ">
           <div class="scale-100 hover:scale-125 ease-in duration-100">
-            <Facebook />
+            <GitHub />
           </div>
           <div class="scale-100 hover:scale-125 ease-in duration-100">
             <Pinterest />
@@ -59,7 +61,7 @@ const Footer = () => {
         <h1 class="m-6 text-2xl">Useful Links</h1>
         <ul class="grid md:grid-cols-1 grid-cols-2 ">
           <li>
-            <a href="http://localhost:3000/">Home</a>
+            <a href="../Home">Home</a>
           </li>
           <a>Cart</a>
           <a>Men's Fashion</a>
