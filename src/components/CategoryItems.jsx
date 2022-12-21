@@ -4,12 +4,12 @@ const CategoryItems = () => {
   return (
     <container class="md:flex md:grid-cols-3 p-8 sm:grid sm:grid-cols-1 ">
         <card1 
-          class="flex flex-col justify-between mx-4 my-4 shadow-sm shadow-teal-900 px-6 bg-slate-100 rounded-lg">
-          <img src="https://bit.ly/3WqCyN1" class="h-96"/>
+          class="bg-mens bg-no-repeat bg-cover flex flex-col justify-between mx-4 my-4 shadow-sm shadow-teal-900 px-6 bg-slate-100 rounded-lg">
+          
           <p class="text-xl text-teal-900 font-extrabold mx-auto py-2">
             MEN'S
           </p>
-          <p class="text-center px-6 text-sm ">
+          <p class="text-center px-6  text-sm ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis fuga
             blanditiis voluptate a, quam voluptatibus exercitationem tenetur
             beatae earum dolorum?
@@ -22,7 +22,7 @@ const CategoryItems = () => {
         </card1>
     
       <card2 class="flex flex-col justify-between mx-4 my-4 shadow-sm shadow-teal-900 px-6 bg-slate-100 rounded-lg">
-        <img src="https://bit.ly/3jdm3pc"  class="h-96" />
+        <img src=""  class="h-96" />
         <p class="text-xl text-teal-900 font-extrabold mx-auto py-2">
           KID'S
         </p>
@@ -39,7 +39,7 @@ const CategoryItems = () => {
       </card2>
 
       <card3 class="flex flex-col justify-between mx-4 my-4 shadow-sm shadow-teal-900 px-6 bg-slate-100 rounded-lg">
-        <img src="https://bit.ly/3YyhN3T"  class="h-96"/>
+        <img src=""  class="h-96"/>
         <p class="text-xl text-teal-900 font-extrabold mx-auto py-2">
           WOMEN'S
         </p>

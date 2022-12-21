@@ -23,7 +23,7 @@ const Footer = () => {
               <div class="bg-slate-50 rounded-tl-full rounded-br-full px-8 m-0.5">        
                 <logo class="text-3xl font-bold m-6 mb-0 font-serif">
                   <span class="bg-clip-text text-transparent bg-gradient-to-r from-red-700 via-yellow-500 to-sky-700">
-                    LAMA.
+                    <a href="../home">LAMA</a>
                   </span>
                 </logo>
               </div>
@@ -37,24 +37,24 @@ const Footer = () => {
           numquam perspiciatis quas.
         </desc>
         <socialContainer class="flex flex-row mx-6 px-12 justify-between ">
-          <div class="scale-100 hover:scale-125 ease-in duration-100">
+          <a href="https://github.com/Chinmai1608/ecom" class="scale-100 hover:scale-125 ease-in duration-100">
             <GitHub />
-          </div>
-          <div class="scale-100 hover:scale-125 ease-in duration-100">
+          </a>
+          <a href="" class="scale-100 hover:scale-125 ease-in duration-100">
             <Pinterest />
-          </div>
-          <div class="scale-100 hover:scale-125 ease-in duration-100">
+          </a>
+          <a href="" class="scale-100 hover:scale-125 ease-in duration-100">
             <Twitter />
-          </div>
-          <div class="scale-100 hover:scale-125 ease-in duration-100">
+          </a>
+          <a href="" class="scale-100 hover:scale-125 ease-in duration-100">
             <Instagram />
-          </div>
-          <div class="scale-100 hover:scale-125 ease-in duration-100">
+          </a>
+          <a href="" class="scale-100 hover:scale-125 ease-in duration-100">
             <LinkedIn />
-          </div>
-          <div class="scale-100 hover:scale-125 ease-in duration-100">
+          </a>
+          <a href="https://web.whatsapp.com/" class="scale-100 hover:scale-125 ease-in duration-100">
             <WhatsApp />
-          </div>
+          </a>
         </socialContainer>
       </left>
       <center class="flex-1 m-6">
@@ -63,15 +63,15 @@ const Footer = () => {
           <li>
             <a href="../Home">Home</a>
           </li>
-          <a>Cart</a>
-          <a>Men's Fashion</a>
-          <a>Women's Fashion</a>
-          <a>Accessories</a>
-          <a>My Account</a>
-          <a>Order Tracking</a>
-          <a>Wishlist</a>
-          <a>Terms</a>
-          <a>About Us</a>
+          <a href="../cart">Cart</a>
+          <a href="../ProductList">Men's Fashion</a>
+          <a href="../ProductList">Women's Fashion</a>
+          <a href="">Accessories</a>
+          <a href="">My Account</a>
+          <a href="">Order Tracking</a>
+          <a href="">Wishlist</a>
+          <a href="">Terms</a>
+          <a href="">About Us</a>
         </ul>
       </center>
       <right class="flex-1 m-6">
@@ -84,9 +84,9 @@ const Footer = () => {
             <p class="py-1">
               <Phone /> +1 234 56 78
             </p>
-            <p class="py-1">
+            <a href="https://bit.ly/3YAxc3I" class="py-1">
               <MailOutline /> contact@lama.dev
-            </p>
+            </a>
           </div>
         </div>
         <div class="  grid grid-cols-2 ">

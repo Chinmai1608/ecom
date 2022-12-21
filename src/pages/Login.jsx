@@ -14,11 +14,11 @@ const Login = () => {
     <div>
       <Navbar/>
       <container class="w-screen h-screen bg-gradient-to-t ">
-      <wrapper class="flex flex-col justify-center w-screen h-screen  bg-img bg-local bg-no-repeat bg-center bg-cover">
-       <div class="backdrop-blur-sm">
+      <wrapper class="flex flex-col justify-center md:w-screen h-screen  bg-img bg-local bg-no-repeat bg-center bg-cover">
+       <div class="backdrop-blur-sm h-full">
         <p class="text-4xl font-bold flex flex-row p-12 font-mono justify-center">
           <div class="bg-opacity-70 p-2 pt-3 px-8  rounded-tl-full rounded-br-full bg-white">  
-            <div class=" bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-400 bg-sky-800">
+            <div class=" bg-clip-text font-serif text-2xl md:text-3xl text-transparent bg-gradient-to-b from-teal-700 via-slate-500 bg-slate-900">
               SIGN IN
             </div>
           </div>
@@ -52,8 +52,8 @@ const Login = () => {
               </button>
             </div>
             <div class="flex flex-row justify-center ">
-              <a class="px-2 m-2 text-xs bg-opacity-50 bg-white">Forgot Password?</a>
-              <a class="px-2 m-2 text-xs bg-opacity-50 bg-white">Create a New Account</a>
+              <a class="px-2 m-2 text-xs hover:underline cursor-pointer">Forgot Password?</a>
+              <a class="px-2 m-2 text-xs hover:underline cursor-pointer">Create a New Account</a>
             </div>
           </form>
         </div>

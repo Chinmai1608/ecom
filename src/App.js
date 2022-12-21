@@ -1,7 +1,6 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductList from "./pages/ProductList";
 import Product from "./pages/Product";
 import Register from "./pages/Register";
@@ -13,7 +12,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<><Home/> <Navbar/></>} />
+        <Route exact path="/" element={<Home/> } />
       </Routes>
       <Routes>
         <Route exact path="/cart" element={<Cart/>} />

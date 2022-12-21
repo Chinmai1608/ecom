@@ -13,12 +13,12 @@ const Register = () => {
   return (
    <div>
     <Navbar/> 
-    <container class="w-screen h-screen bg-gradient-to-t ">
-      <wrapper class="flex flex-col justify-center w-screen h-screen bg-img bg-local bg-no-repeat bg-cover bg-center">
-       <div class="backdrop-blur-sm">
+    <container class="w-screen h-screen  ">
+      <wrapper class="flex flex-col justify-center h-screen md:w-screen md:h-full bg-img  bg-no-repeat bg-cover bg-center">
+       <div class="backdrop-blur-sm h-full">
         <p class="text-4xl font-bold flex flex-row p-12 font-mono justify-center">
-          <div class="bg-opacity-70 p-2 pt-3 px-8 rounded-tl-full rounded-br-full bg-white"> 
-            <div class="bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-yellow-400 bg-sky-800">
+          <div class="bg-opacity-70 p-2 pt-3 md:px-8 px-6 rounded-tl-full rounded-br-full bg-white"> 
+            <div class="bg-clip-text font-serif text-center text-2xl md:text-3xl text-transparent bg-gradient-to-b from-teal-700 via-slate-500 bg-slate-900">
               CREATE AN ACCOUNT
             </div>
           </div>
@@ -74,10 +74,10 @@ const Register = () => {
               </span>
             </span>
             <agreement class="flex flex-row justify-center text-xs p-5">
-              <div class=" bg-slate-100 ring-2 ring-slate-600 p-3 rounded-md">
+              <div class=" bg-slate-100 ring-2 ring-slate-600 p-3 rounded-md text-center">
                 <input type="checkbox" class="mr-1"/>
                     by Creating an account, I Concent to the processing of my
-                personal Data in accordance with the PRIVACY POLICY
+                personal Data in accordance with the PRIVACY POLICY.
               </div>
             </agreement>
             <div class="flex flex-row justify-center m-8">
