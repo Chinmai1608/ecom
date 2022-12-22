@@ -52,8 +52,8 @@ const Login = () => {
               </button>
             </div>
             <div class="flex flex-row justify-center ">
-              <a class="px-2 m-2 text-xs hover:underline cursor-pointer">Forgot Password?</a>
-              <a class="px-2 m-2 text-xs hover:underline cursor-pointer">Create a New Account</a>
+              <a class="px-2 m-2 text-xs hover:underline cursor-pointer" href="./register">Forgot Password?</a>
+              <a class="px-2 m-2 text-xs hover:underline cursor-pointer" href="./register">Create a New Account</a>
             </div>
           </form>
         </div>

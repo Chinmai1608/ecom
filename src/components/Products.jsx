@@ -3,10 +3,12 @@ import Product from './Product'
 
 const Products = () => {
   return (
-    <container class="flex px-20 flex-wrap">
-      <Product/>
-        
-    </container>
+    <div>  
+      <container class="flex px-20 flex-wrap">
+        <Product/>
+
+      </container>
+    </div>
   )
 }
 

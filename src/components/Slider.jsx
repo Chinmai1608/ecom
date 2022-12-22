@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@mui/icons-material";
 import { useState } from "react";
-import Product from "../pages/Product";
+
 
 const Slider = () => {
   const [slideIndex, setslideIndex] = useState(0);
@@ -22,7 +22,7 @@ const Slider = () => {
             </div>
           </div>
 
-          <wrapper slideIndex class="flex transition-transform translate-x-full ease-linear h-min md:h-full ">
+          <wrapper slideIndex class="flex transition-transform translate-x-screen ease-linear h-min md:h-full ">
             <slide class="h-min md:h-full flex justify-center md:w-full bg-gradient-to-tr from-teal-700  via-teal-100 to-teal-700">
               <div class="grid grid-cols-1 md:grid-cols-2 h-min">
                 <image class="h-min flex flex-col m-4 justify-center">
@@ -48,7 +48,7 @@ const Slider = () => {
             </slide>
           </wrapper>
 
-          <wrapper class="flex transition-transform translate-x-full ease-linear h-min md:h-full ">
+          {/* <wrapper class="flex transition-transform translate-x-screen ease-linear h-min md:h-full ">
             <slide class="h-min md:h-full flex justify-center md:w-full bg-gradient-to-tr from-teal-700  via-teal-100 to-teal-700">
               <div class="grid grid-cols-1 md:grid-cols-2 h-min">
                 <image class="h-min flex flex-col m-4 justify-center">
@@ -74,7 +74,7 @@ const Slider = () => {
             </slide>
           </wrapper> 
 
-          <wrapper class="flex transition-transform translate-x-full ease-linear h-min md:h-full ">
+          <wrapper class="flex transition-transform translate-x-screen ease-linear h-min md:h-full ">
             <slide class="h-min md:h-full flex justify-center md:w-full bg-gradient-to-tr from-teal-700  via-teal-100 to-teal-700">
               <div class="grid grid-cols-1 md:grid-cols-2 h-min">
                 <image class="h-min flex flex-col m-4 justify-center">
@@ -98,7 +98,7 @@ const Slider = () => {
                 </info>
               </div>
             </slide>
-          </wrapper>
+          </wrapper> */}
 
           <div class=" cursor-pointer bg-slate-50 rounded-full top-0 bottom-0 m-auto flex justify-items-end">
             <div direction="right" onClick={() => handleclick("right")}>
