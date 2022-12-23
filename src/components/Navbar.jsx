@@ -10,7 +10,7 @@ const menu = document.querySelector(".mobile-menu");
 
 export default function Example() {
   return (
-    <div>
+    <div class="sticky-">
       {/* <div class="hidden">
       btn.addEventListener('click', () => {
           menu.classList.toggle('hidden');
